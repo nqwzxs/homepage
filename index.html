@@ -1,33 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
 <body class="portfolio">
+  <div class="background-tilt">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+    </svg>
+  </div>
   <header class="intro">
-    <div class="wrapper">
-      <div class="intro__figure">
+    <div class="wrapper intro__wrapper">
+      <figure class="intro__figure">
         <img src="assets/images/cat1.jpg" alt="Ragdoll Cat on a White Chair" class="image intro__image">
         <h1 class="intro__full-name">Willow Furball</h1>
-      </div>
+      </figure>
       <div class="intro__about-me">
-        <h1 class="title intro__title">About me</h2>
-        <p class="text intro__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere in necessitatibus atque amet, tenetur eligendi sit harum adipisci consequatur modi ipsum totam debitis repudiandae eum incidunt. Reprehenderit ducimus aut perspiciatis.</p>
+        <div class="intro__inner-about-me">
+          <h1 class="title intro__title">About me</h1>
+          <p class="text intro__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis elit purus. Donec varius vulputate ante. Etiam pellentesque lacus sapien, eu semper elit varius in. Mauris aliquet lorem fermentum lectus dictum, eget faucibus ex hendrerit. Ut accumsan dictum risus, vel ullamcorper lorem. Donec eget interdum leo. Nunc mollis ligula at est varius, a posuere arcu condimentum.</p>
+          <div class="links intro__links">
+            <i class="devicon-github-original"></i>
+            <i class="devicon-linkedin-plain"></i>
+            <i class="devicon-twitter-original"></i>
+          </div>
+        </div>
       </div>
     </div>
   </header>
   <section class="my-work">
     <div class="wrapper">
-      <h1 class="title my-work__title">My work</h2>
+      <h1 class="title my-work__title">My work</h1>
       <div class="my_work__grid">
         <div class="card">
           <img src="" alt="" class="image card__image">
           <div class="card__body">
-            <h2 class="card__title">Project name</h3>
-            <span class="card__links"></span>
+            <h2 class="card__title">Project name</h2>
+            <span class="links card__links"></span>
           </div>
           <div class="card__footer">
             <p class="card__description"></p>
@@ -39,11 +52,12 @@
   <footer class="contacts">
     <div class="wrapper">
       <div class="contacts__contacts">
-        <h1 class="contacts__title">Contact me</h1>
+        <h1 class="title contacts__title">Contact me</h1>
         <p class="text contacts__text"></p>
         <p class="contacts__address"></p>
         <span class="contacts__phone-number"></span>
         <span class="contacts__email-address"></span>
+        <span class="links contacts__links"></span>
       </div>
       <img src="assets/images/cat2.jpg" alt="Short-haired White Cat on Chair" class="image contacts__image">
     </div>
